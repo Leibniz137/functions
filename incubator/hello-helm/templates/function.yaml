@@ -1,0 +1,11 @@
+apiVersion: kubeless.io/v1beta1
+kind: Function
+metadata:
+  name: hello
+spec:
+  deps: |
+    requests
+  function: "def handler(event, context):\n   return 'unhappy helming!'\n"
+  handler: hello.handler
+  runtime: python3.6
+  type: HTTP
