@@ -5,7 +5,8 @@ metadata:
 spec:
   deps: |
     requests
-  function: "def handler(event, context):\n   return 'unhappy helming!'\n"
+  function: "def handler(event, context):\n   return 'happy helming!'\n"
   handler: hello.handler
   runtime: python3.6
   type: HTTP
+  checksum: sha256:04bec1cebf2062cee63f22a8bdcc107f840b341b0112e82b02327039565b0da4
